@@ -9,31 +9,17 @@ const nextBtn = document.getElementById("forward-button");
 // Song List 
 const songs = [
     {
-        artist: "Chris Brown",
-        title: "Kiss Kiss (Feat. T-Pain)",
-        url: "https://archive.org/download/exclusive_202405/02.%20Kiss%20Kiss%20%28Feat.%20T-Pain%29.mp3",
-        picture: "https://ia600400.us.archive.org/0/items/exclusive_202405/Front%20Cover.jpg"
+        artist: "Lauryn Hill", 
+        title: "Ex-Factor",
+        url: "audio/ex-factor-audio.mp3",
+        picture: "images/The-Miseducation-Of-Lauryn-Hill.jpg"
     },
     {
-        artist: "Chris Brown",
-        title: "With You",
-        url: "https://dn710005.ca.archive.org/0/items/exclusive_202405/04.%20With%20You.mp3",
-        picture: "https://ia600400.us.archive.org/0/items/exclusive_202405/Front%20Cover.jpg"
-    },
-    {
-        artist: "Chris Brown",
-        title: "Wall To Wall",
-        url: "https://dn710005.ca.archive.org/0/items/exclusive_202405/09.%20Wall%20To%20Wall.mp3",
-        picture: "https://ia600400.us.archive.org/0/items/exclusive_202405/Front%20Cover.jpg"
-    },
-    {
-        artist: "Chris Brown",
-        title: "I Can Transform Ya (Feat. Lil Wayne & Swizz Beatz)",
-        url: "https://ia600608.us.archive.org/15/items/graffiti_202405/01.%20I%20Can%20Transform%20Ya%20%28Feat.%20Lil%20Wayne%20%26%20Swizz%20Beatz%29.mp3",
-        picture: "https://i.scdn.co/image/ab67616d0000b2736f33acdab3fc71fc05e16647"
+        artist: "Chris Brown", 
+        title: "Something In The Water",
+        url: "audio/something-in-the-water-audio.mp3", 
+        picture: "images/Brown.jpg" 
     }
-
-  
 ];
 
 // Player State
@@ -86,7 +72,7 @@ function nextSong() {
 function prevSong() {
     songIndex--;
     if (songIndex < 0) {
-        songIndex = songs.length - 1; // Va a la última
+        songIndex = songs.length - 1; 
     }
     loadSong(songs[songIndex]);
     if (isPlaying) audio.play();
