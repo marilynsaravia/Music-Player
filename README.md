@@ -2,10 +2,10 @@
 A minimalist and modern music player.
 
 ## Live Demo
-Puedes ver la aplicación en funcionamiento aquí: **[Ver Demo en Vivo](https://marilynsaravia.github.io/music-player/)**
+Follow this link: **[ Music Player ](https://marilynsaravia.github.io/music-player/)**
 
 ## Screenshot
-<img width="1042" height="543" alt="image" src="https://github.com/user-attachments/assets/8d8ce0f3-acf0-44ea-8bba-ec97f0ce83bb" />
+<img width="963" height="538" alt="image" src="https://github.com/user-attachments/assets/44ed043e-5fcb-4cc9-a758-e01742d0641b" />
 
 ## Description
 This application is a **Digital Music Player** built using HTML5, CSS3, and Vanilla JavaScript. It provides a smooth, fast, and intuitive interface for playing audio tracks directly from a local environment.
