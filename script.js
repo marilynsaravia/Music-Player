@@ -9,16 +9,22 @@ const nextBtn = document.getElementById("forward-button");
 // Song List 
 const songs = [
     {
-        artist: "Lauryn Hill", 
-        title: "Ex-Factor",
-        url: "audio/ex-factor-audio.mp3",
-        picture: "images/The-Miseducation-Of-Lauryn-Hill.jpg"
+      artist: "Lauryn Hill", 
+      title: "Ex-Factor",
+      url: "audio/ex-factor-audio.mp3",
+      picture: "images/The-Miseducation-Of-Lauryn-Hill.jpg"
     },
     {
-        artist: "Chris Brown", 
-        title: "Something In The Water",
-        url: "audio/something-in-the-water-audio.mp3", 
-        picture: "images/Brown.jpg" 
+      artist: "Chris Brown", 
+      title: "Something In The Water",
+      url: "audio/something-in-the-water-audio.mp3", 
+      picture: "images/Brown.jpg" 
+    },
+    {
+      artist: "Adele", 
+      title: "Love In The Dark",
+      url: "audio/love-in-the-dark.mp3", 
+      picture: "images/25.jpg"
     }
 ];
 
