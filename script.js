@@ -25,6 +25,12 @@ const songs = [
       title: "Love In The Dark",
       url: "audio/love-in-the-dark.mp3", 
       picture: "images/25.jpg"
+    },
+    {
+      artist: "Ana Castela",
+      title: "Nosso Quadro",
+      url: "audio/nosso-quadro.mp3",
+      picture: "images/Agroplay.jpg"
     }
 ];
 
