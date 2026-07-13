@@ -61,7 +61,9 @@ function togglePlay() {
 function playSong() {
     isPlaying = true;
     playIcon.classList.replace("fa-play", "fa-pause");
-    audio.play();
+    audio.play().catch(error => {
+      console.warn("Esperando a que el audio se cargue", error);
+    });
 }
 
 function pauseSong() {
@@ -74,7 +76,7 @@ function pauseSong() {
 function nextSong() {
     songIndex++;
     if (songIndex > songs.length - 1) {
-        songIndex = 0; // Vuelve al inicio
+        songIndex = 0; // Reset to the start
     }
     loadSong(songs[songIndex]);
     if (isPlaying) audio.play(); 
@@ -87,10 +89,8 @@ function prevSong() {
         songIndex = songs.length - 1; 
     }
     loadSong(songs[songIndex]);
-    if (isPlaying) audio.play();
+    if (isPlaying) playSong();
 }
-
-// --- Event Listeners ---
 
 playBtn.addEventListener("click", togglePlay);
 nextBtn.addEventListener("click", nextSong);
